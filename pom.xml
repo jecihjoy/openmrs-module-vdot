@@ -42,7 +42,7 @@
 		<uiframeworkVersion>3.3.1</uiframeworkVersion>
 		<kenyacoreVersion>2.2</kenyacoreVersion>
 		<kenyauiVersion>2.0.3</kenyauiVersion>
-		<kenyaemrVersion>17.0.3</kenyaemrVersion>
+		<kenyaemrVersion>18.7.0</kenyaemrVersion>
 		<jodaTimeVersion>2.9.1</jodaTimeVersion>
 		<idgenVersion>2.6</idgenVersion>
 		<jacksonVersion>2.10.1</jacksonVersion>
@@ -385,25 +385,37 @@
 		<repository>
 			<id>openmrs-repo</id>
 			<name>OpenMRS Nexus Repository</name>
-			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
+			<url>https://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
 		</repository>
 		<repository>
 			<id>central</id>
 			<name>Maven Repository Switchboard</name>
 			<layout>default</layout>
-			<url>http://repo1.maven.org/maven2</url>
+			<url>https://repo1.maven.org/maven2</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>openmrs-repo</id>
 			<name>OpenMRS Nexus Repository</name>
-			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
+			<url>https://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
 
-
+	<distributionManagement>
+		<repository>
+			<id>mks-repo</id>
+			<name>Mekom Solutions Nexus Releases</name>
+			<url>https://nexus.mekomsolutions.net/repository/maven-releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>mks-repo-snapshots</id>
+			<name>Mekom Solutions Nexus Snapshots</name>
+			<url>https://nexus.mekomsolutions.net/repository/maven-snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
 </project>
